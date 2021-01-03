@@ -1,0 +1,15 @@
+extends layout.pug
+
+block content
+    .content
+        h1= data.title
+        div !{content}
+
+block sidebar
+    .menu
+        ul.menu-list
+            each category in data.categories
+                li
+                    a= category
+
+
